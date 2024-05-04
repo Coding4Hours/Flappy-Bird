@@ -1,3 +1,4 @@
+import java.security.SecureRandom;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -88,7 +89,7 @@ class TubeColumn {
 
     public TubeColumn() { 
         tubes = new ArrayList<>();
-        random = new Random();
+        random = new SecureRandom();
         initTubes();
     }
 
